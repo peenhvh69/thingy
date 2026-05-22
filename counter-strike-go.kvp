@@ -1,4 +1,4 @@
-Meta.DisplayName=Counter-Strike: Global Offensive
+Meta.DisplayName=Custom Counter-Strike: Global Offensive
 Meta.Description=Counter-Strike: Global Offensive Dedicated Server
 Meta.OS=Windows, Linux
 Meta.AarchSupport=NotSupported
@@ -26,7 +26,7 @@ Meta.ConfigVersion=6
 Meta.ReleaseNotes=
 Meta.BreakingReleaseNotes=
 Meta.AppIsMultiIPAware=True
-App.DisplayName=Counter-Strike: Global Offensive
+App.DisplayName=Custom Counter-Strike: Global Offensive
 App.RootDir=./csgo/
 App.BaseDirectory=./csgo/740/
 App.SteamWorkshopDownloadLocation=
