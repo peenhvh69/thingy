@@ -4,7 +4,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "740",
-        "UpdateSourceArgs": "4465480",
+        "UpdateSourceArgs": "730",
         "SkipOnFailure": false
     },
     {
@@ -155,22 +155,6 @@
         "UpdateSourceData": "https://raw.githubusercontent.com/nuxencs/NoLobbyReservation/refs/heads/master/addons/sourcemod/scripting/nolobbyreservation.sp",
         "UpdateSourceTarget": "{{$FullBaseDir}}csgo/addons/sourcemod/scripting",
         "OverwriteExistingFiles": true,
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Update steam.inf File",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"if [[ -f csgo/740/csgo/steam.inf ]]; then sed -i \\\"s/^\\s*appID=730\\s*$/appID=4465480/\\\" csgo/740/csgo/steam.inf; fi\"",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Update steam.inf File",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "powershell.exe",
-        "UpdateSourceArgs": "-NoProfile -Command \"if (Test-Path 'csgo\\740\\csgo\\steam.inf') { (Get-Content 'csgo\\740\\csgo\\steam.inf') -replace '^\\s*appID=730\\s*$', 'appID=4465480' | Set-Content 'csgo\\740\\csgo\\steam.inf' }\"",
         "SkipOnFailure": false
     }
 ]
