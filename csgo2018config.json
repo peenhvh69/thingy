@@ -1,0 +1,826 @@
+[
+    {
+        "DisplayName": "RCON Password",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "rcon,password",
+        "FieldName": "$RemoteAdminPassword",
+        "InputType": "text",
+        "ParamFieldName": "rcon_password",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Hidden": true
+    },
+    {
+        "DisplayName": "Server Name",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets the name of the server shown in the server browser",
+        "Keywords": "server,name,hostname",
+        "FieldName": "hostname",
+        "InputType": "text",
+        "ParamFieldName": "hostname",
+        "DefaultValue": "AMP Powered CS:GO 2018 Server",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Server Mod Name",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Name of the mod directory to load. Leave as 'csgo' unless you know what you are doing",
+        "Keywords": "mod,game,directory",
+        "FieldName": "mod",
+        "InputType": "text",
+        "ParamFieldName": "mod",
+        "DefaultValue": "csgo",
+        "EnumValues": {},
+        "Placeholder": "csgo"
+    },
+    {
+        "DisplayName": "Server Password",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Password required to connect. Default is no password",
+        "Keywords": "password,sv_password",
+        "FieldName": "sv_password",
+        "InputType": "Password",
+        "ParamFieldName": "sv_password",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "LAN Server",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Run as a LAN server: no heartbeat to Valve and no client authentication. Recommended for a 2018 build unless you have a working GSLT",
+        "Keywords": "lan,sv_lan",
+        "FieldName": "sv_lan",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_lan",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Game Server Login Token (GSLT)",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Steam Game Server Login Token. Legacy CS:GO tokens are generated against app ID 4465480. A 2018 build is usually rejected as out of date, in which case leave this empty and have players use direct connect",
+        "Keywords": "gslt,token,steam",
+        "FieldName": "sv_setsteamaccount",
+        "InputType": "Password",
+        "ParamFieldName": "sv_setsteamaccount",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "IncludeInCommandLine": true,
+        "SkipIfEmpty": true,
+        "Placeholder": "6544F7E034119F113526E96474F559AH"
+    },
+    {
+        "DisplayName": "Server Region",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Region shown in the server browser",
+        "Keywords": "region",
+        "FieldName": "sv_region",
+        "InputType": "enum",
+        "ParamFieldName": "sv_region",
+        "DefaultValue": "-1",
+        "EnumValues": {
+            "-1": "No region",
+            "0": "East Coast US",
+            "1": "West Coast US",
+            "2": "South America",
+            "3": "Europe",
+            "4": "Asia",
+            "5": "Australia",
+            "6": "Middle East",
+            "7": "Africa",
+            "255": "World"
+        }
+    },
+    {
+        "DisplayName": "Server Steam Group",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "ID of the Steam group the server belongs to",
+        "Keywords": "steam,group",
+        "FieldName": "sv_steamgroup",
+        "InputType": "text",
+        "ParamFieldName": "sv_steamgroup",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Initial Game Mode",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "game_type and game_mode to start with",
+        "Keywords": "gamemode,game_type",
+        "FieldName": "gamemode",
+        "InputType": "enum",
+        "ParamFieldName": "gamemode",
+        "DefaultValue": "+game_type 0 +game_mode 1",
+        "EnumValues": {
+            "+game_type 0 +game_mode 0": "Casual",
+            "+game_type 0 +game_mode 1": "Competitive (default)",
+            "+game_type 0 +game_mode 2": "Wingman (2v2)",
+            "+game_type 0 +game_mode 3": "Weapons Expert",
+            "+game_type 1 +game_mode 0": "Arms Race",
+            "+game_type 1 +game_mode 1": "Demolition",
+            "+game_type 1 +game_mode 2": "Deathmatch",
+            "+game_type 2 +game_mode 0": "Training",
+            "+game_type 3 +game_mode 0": "Custom",
+            "+game_type 4 +game_mode 0": "Guardian",
+            "+game_type 4 +game_mode 1": "Co-op Strike",
+            "+game_type 5 +game_mode 0": "War Games",
+            "+game_type 6 +game_mode 0": "Danger Zone (Dec 2018 builds and later)"
+        }
+    },
+    {
+        "DisplayName": "Game Mode Flag",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Modifier applied to the selected game mode",
+        "Keywords": "flags",
+        "FieldName": "sv_game_mode_flags",
+        "InputType": "enum",
+        "ParamFieldName": "sv_game_mode_flags",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "0": "None (default)",
+            "4": "4 (tmm)",
+            "32": "32 (short)",
+            "36": "36 (tmm + short)"
+        }
+    },
+    {
+        "DisplayName": "Initial Map",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Map the server starts on. Choose --Custom-- to use the Custom Initial Map field",
+        "Keywords": "map",
+        "FieldName": "map",
+        "InputType": "enum",
+        "ParamFieldName": "map",
+        "DefaultValue": "de_dust2",
+        "EnumValues": {
+            "de_dust2": "Dust II (default)",
+            "de_mirage": "Mirage",
+            "de_inferno": "Inferno",
+            "de_nuke": "Nuke",
+            "de_train": "Train",
+            "de_overpass": "Overpass",
+            "de_cache": "Cache",
+            "de_cbble": "Cobblestone",
+            "de_vertigo": "Vertigo",
+            "de_canals": "Canals",
+            "cs_office": "Office",
+            "cs_italy": "Italy",
+            "cs_agency": "Agency",
+            "cs_assault": "Assault",
+            "cs_militia": "Militia",
+            "ar_baggage": "Baggage",
+            "ar_shoots": "Shoots",
+            "dz_blacksite": "Blacksite (Danger Zone)",
+            "{{CustomMap}}": "--Custom--"
+        }
+    },
+    {
+        "DisplayName": "Custom Initial Map",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Map name used when Initial Map is set to --Custom--",
+        "Keywords": "custom,map",
+        "FieldName": "CustomMap",
+        "InputType": "text",
+        "ParamFieldName": "CustomMap",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Map Group",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Map group used for rotation",
+        "Keywords": "mapgroup",
+        "FieldName": "mapgroup",
+        "InputType": "text",
+        "ParamFieldName": "mapgroup",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Placeholder": "mg_active"
+    },
+    {
+        "DisplayName": "Steam Web API Key",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Steam Web API key, only needed for workshop map hosting",
+        "Keywords": "workshop,api,key",
+        "FieldName": "authkey",
+        "InputType": "Password",
+        "ParamFieldName": "authkey",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Server Tickrate",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Server tickrate",
+        "Keywords": "tickrate",
+        "FieldName": "tickrate",
+        "InputType": "number",
+        "ParamFieldName": "tickrate",
+        "DefaultValue": "128",
+        "EnumValues": {},
+        "MinValue": "1",
+        "MaxValue": "128",
+        "Placeholder": "128",
+        "Suffix": "tps"
+    },
+    {
+        "DisplayName": "Maximum Players",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Maximum number of player slots",
+        "Keywords": "players,slots",
+        "FieldName": "$MaxUsers",
+        "InputType": "number",
+        "ParamFieldName": "MaxUsers",
+        "DefaultValue": "10",
+        "EnumValues": {},
+        "MinValue": "1",
+        "MaxValue": "64"
+    },
+    {
+        "DisplayName": "Visible Max Players",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Player count shown in the server browser. -1 uses the real value",
+        "Keywords": "visible,players",
+        "FieldName": "sv_visiblemaxplayers",
+        "InputType": "number",
+        "ParamFieldName": "sv_visiblemaxplayers",
+        "DefaultValue": "-1",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Disable Valve Anti-Cheat",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Starts the server with -insecure. Needed when VAC cannot initialise against a legacy build",
+        "Keywords": "vac,insecure",
+        "FieldName": "insecure",
+        "InputType": "checkbox",
+        "ParamFieldName": "insecure",
+        "DefaultValue": "-insecure ",
+        "EnumValues": {
+            "False": "",
+            "True": "-insecure "
+        }
+    },
+    {
+        "DisplayName": "Pure Server Mode",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Client file consistency enforcement",
+        "Keywords": "pure",
+        "FieldName": "sv_pure",
+        "InputType": "enum",
+        "ParamFieldName": "sv_pure",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "-1": "Disabled",
+            "0": "Advisory (0)",
+            "1": "Enforced (1, default)",
+            "2": "Strict (2)"
+        }
+    },
+    {
+        "DisplayName": "Kick Impure Clients",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Kick clients that fail sv_pure",
+        "Keywords": "pure,kick",
+        "FieldName": "sv_pure_kick_clients",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_pure_kick_clients",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Enforce File Consistency",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Enforce file consistency for critical files",
+        "Keywords": "consistency",
+        "FieldName": "sv_consistency",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_consistency",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Force Preload",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Force server-side preloading",
+        "Keywords": "preload",
+        "FieldName": "sv_forcepreload",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_forcepreload",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Enable Cheats",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Allow cheat commands",
+        "Keywords": "cheats",
+        "FieldName": "sv_cheats",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_cheats",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Allow Downloads",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Allow clients to download custom content",
+        "Keywords": "download",
+        "FieldName": "sv_allowdownload",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_allowdownload",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Allow Uploads",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Allow clients to upload custom content",
+        "Keywords": "upload",
+        "FieldName": "sv_allowupload",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_allowupload",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Fast Download URL",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "HTTP location clients fetch custom content from",
+        "Keywords": "fastdl,download,url",
+        "FieldName": "sv_downloadurl",
+        "InputType": "text",
+        "ParamFieldName": "sv_downloadurl",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Minimum Rate",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Minimum client bandwidth rate",
+        "Keywords": "rate",
+        "FieldName": "sv_minrate",
+        "InputType": "number",
+        "ParamFieldName": "sv_minrate",
+        "DefaultValue": "80000",
+        "EnumValues": {},
+        "Suffix": "bytes/sec"
+    },
+    {
+        "DisplayName": "Maximum Rate",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Maximum client bandwidth rate (0 = unlimited)",
+        "Keywords": "rate",
+        "FieldName": "sv_maxrate",
+        "InputType": "number",
+        "ParamFieldName": "sv_maxrate",
+        "DefaultValue": "0",
+        "EnumValues": {},
+        "Suffix": "bytes/sec"
+    },
+    {
+        "DisplayName": "Minimum Update Rate",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Minimum client update rate",
+        "Keywords": "updaterate",
+        "FieldName": "sv_minupdaterate",
+        "InputType": "number",
+        "ParamFieldName": "sv_minupdaterate",
+        "DefaultValue": "64",
+        "EnumValues": {},
+        "Suffix": "tps"
+    },
+    {
+        "DisplayName": "Maximum Update Rate",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Maximum client update rate",
+        "Keywords": "updaterate",
+        "FieldName": "sv_maxupdaterate",
+        "InputType": "number",
+        "ParamFieldName": "sv_maxupdaterate",
+        "DefaultValue": "128",
+        "EnumValues": {},
+        "Suffix": "tps"
+    },
+    {
+        "DisplayName": "Additional Command Line Parameters",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Extra command line parameters (anything starting with -) not set by AMP",
+        "Keywords": "custom,parameters",
+        "FieldName": "CustomParameters",
+        "InputType": "text",
+        "ParamFieldName": "CustomParameters",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Placeholder": "-threads 4"
+    },
+    {
+        "DisplayName": "Additional Console Variables",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Extra console variables (anything starting with +) not set by AMP",
+        "Keywords": "custom,convars",
+        "FieldName": "CustomConVars",
+        "InputType": "text",
+        "ParamFieldName": "CustomConVars",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Placeholder": "+sv_gravity 800"
+    },
+    {
+        "DisplayName": "Additional Server Settings",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Extra lines written into server.cfg, one setting per line",
+        "Keywords": "custom,settings",
+        "FieldName": "UserSettings",
+        "InputType": "Textarea",
+        "ParamFieldName": "UserSettings",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "IsFlagArgument": false
+    },
+    {
+        "DisplayName": "Friendly Fire",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Enable friendly fire",
+        "Keywords": "friendlyfire",
+        "FieldName": "mp_friendlyfire",
+        "InputType": "checkbox",
+        "ParamFieldName": "mp_friendlyfire",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Auto Team Balance",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Automatically balance teams",
+        "Keywords": "balance",
+        "FieldName": "mp_autoteambalance",
+        "InputType": "checkbox",
+        "ParamFieldName": "mp_autoteambalance",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Time Limit",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Map time limit in minutes (0 = none)",
+        "Keywords": "timelimit",
+        "FieldName": "mp_timelimit",
+        "InputType": "number",
+        "ParamFieldName": "mp_timelimit",
+        "DefaultValue": "0",
+        "EnumValues": {},
+        "Suffix": "minutes"
+    },
+    {
+        "DisplayName": "Maximum Rounds",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Rounds played before the map changes",
+        "Keywords": "rounds",
+        "FieldName": "mp_maxrounds",
+        "InputType": "number",
+        "ParamFieldName": "mp_maxrounds",
+        "DefaultValue": "30",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Spectator Mode",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "What dead players may spectate",
+        "Keywords": "spectate,camera",
+        "FieldName": "mp_forcecamera",
+        "InputType": "enum",
+        "ParamFieldName": "mp_forcecamera",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "0": "Anyone",
+            "1": "Team only (default)"
+        }
+    },
+    {
+        "DisplayName": "Disable Auto Kick",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Disable kicking for idling, team damage or team killing",
+        "Keywords": "autokick",
+        "FieldName": "mp_disable_autokick",
+        "InputType": "checkbox",
+        "ParamFieldName": "mp_disable_autokick",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Allow Pausing",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Allow the game to be paused",
+        "Keywords": "pause",
+        "FieldName": "sv_pausable",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_pausable",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Allow Wait Command",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Allow the wait console command",
+        "Keywords": "wait",
+        "FieldName": "sv_allow_wait_command",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_allow_wait_command",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Enable Voice Chat",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Enable in-game voice chat",
+        "Keywords": "voice",
+        "FieldName": "sv_voiceenable",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_voiceenable",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Alive Players Hear Enemies",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Living players can hear enemy voice chat",
+        "Keywords": "voice,enemy",
+        "FieldName": "sv_talk_enemy_living",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_talk_enemy_living",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Dead Players Hear Enemies",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Dead players can hear enemy voice chat",
+        "Keywords": "voice,enemy",
+        "FieldName": "sv_talk_enemy_dead",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_talk_enemy_dead",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Clear Hint History",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "Clear hint history between rounds",
+        "Keywords": "hints",
+        "FieldName": "sv_clearhinthistory",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_clearhinthistory",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Disable SourceTV",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "SourceTV:tv:3",
+        "Description": "Start the server with -nohltv",
+        "Keywords": "sourcetv,hltv",
+        "FieldName": "nohltv",
+        "InputType": "checkbox",
+        "ParamFieldName": "nohltv",
+        "DefaultValue": "-nohltv ",
+        "EnumValues": {
+            "False": "",
+            "True": "-nohltv "
+        }
+    },
+    {
+        "DisplayName": "Auto Record Demos",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "SourceTV:tv:3",
+        "Description": "Automatically record SourceTV demos",
+        "Keywords": "demo,record",
+        "FieldName": "tv_autorecord",
+        "InputType": "checkbox",
+        "ParamFieldName": "tv_autorecord",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "SourceTV Max Clients",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "SourceTV:tv:3",
+        "Description": "Maximum SourceTV spectators",
+        "Keywords": "sourcetv,clients",
+        "FieldName": "tv_maxclients",
+        "InputType": "number",
+        "ParamFieldName": "tv_maxclients",
+        "DefaultValue": "10",
+        "EnumValues": {},
+        "MinValue": "0",
+        "MaxValue": "255"
+    },
+    {
+        "DisplayName": "SourceTV Max Rate",
+        "Category": "CS:GO 2018:stadia_controller",
+        "Subcategory": "SourceTV:tv:3",
+        "Description": "Maximum SourceTV bandwidth (0 = unlimited)",
+        "Keywords": "sourcetv,rate",
+        "FieldName": "tv_maxrate",
+        "InputType": "number",
+        "ParamFieldName": "tv_maxrate",
+        "DefaultValue": "0",
+        "EnumValues": {},
+        "Suffix": "bytes/sec"
+    },
+    {
+        "DisplayName": "Depot 731 Manifest ID",
+        "Category": "Updates",
+        "Subcategory": "Build:build:1",
+        "Description": "Manifest ID for depot 731 (game content). Change this and run Update to install a different build",
+        "Keywords": "depot,manifest,731",
+        "FieldName": "DepotManifest731",
+        "InputType": "text",
+        "ParamFieldName": "DepotManifest731",
+        "DefaultValue": "1726760845998127111",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Depot 740 Manifest ID",
+        "Category": "Updates",
+        "Subcategory": "Build:build:1",
+        "Description": "Manifest ID for depot 740 (Linux dedicated server binaries)",
+        "Keywords": "depot,manifest,740",
+        "FieldName": "DepotManifest740",
+        "InputType": "text",
+        "ParamFieldName": "DepotManifest740",
+        "DefaultValue": "9121620377426899826",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Pre-Staged Build Path",
+        "Category": "Updates",
+        "Subcategory": "Build:build:1",
+        "Description": "Absolute path to an already merged build directory. When set, AMP copies from here and never calls SteamCMD",
+        "Keywords": "prestaged,local,copy",
+        "FieldName": "PreStagedBuildPath",
+        "InputType": "text",
+        "ParamFieldName": "PreStagedBuildPath",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Placeholder": "/home/amp/csgo2018-master"
+    },
+    {
+        "DisplayName": "Force Reinstall",
+        "Category": "Updates",
+        "Subcategory": "Build:build:1",
+        "Description": "Re-download and re-merge the depots on the next update even if the build is already installed",
+        "Keywords": "force,reinstall",
+        "FieldName": "ForceReinstall",
+        "InputType": "checkbox",
+        "ParamFieldName": "ForceReinstall",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Keep Depot Staging Copy",
+        "Category": "Updates",
+        "Subcategory": "Build:build:1",
+        "Description": "Keep the raw depot download under csgo2018/steamcmd/steamapps. Uses roughly twice the disk space but makes reinstalls fast",
+        "Keywords": "cache,disk",
+        "FieldName": "KeepDepotCache",
+        "InputType": "checkbox",
+        "ParamFieldName": "KeepDepotCache",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Disable Bundled libgcc",
+        "Category": "Updates",
+        "Subcategory": "Build:build:1",
+        "Description": "Move bin/libgcc_s.so.1 aside so the system copy is used. Old builds can crash on modern glibc without this",
+        "Keywords": "libgcc,glibc",
+        "FieldName": "StripBundledLibgcc",
+        "InputType": "checkbox",
+        "ParamFieldName": "StripBundledLibgcc",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "steam.inf App ID Override",
+        "Category": "Updates",
+        "Subcategory": "Build:build:1",
+        "Description": "Rewrites appID in csgo/steam.inf. Leave unchanged to keep the build's own value (730). 4465480 is the legacy CS:GO app ID used by current legacy servers",
+        "Keywords": "steam.inf,appid",
+        "FieldName": "SteamInfAppID",
+        "InputType": "enum",
+        "ParamFieldName": "SteamInfAppID",
+        "DefaultValue": "",
+        "EnumValues": {
+            "": "Leave unchanged (default)",
+            "730": "730 (CS:GO)",
+            "4465480": "4465480 (CS:GO Legacy)"
+        }
+    }
+]
