@@ -1,7 +1,7 @@
 [
     {
         "DisplayName": "RCON Password",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "",
         "Keywords": "rcon,password",
@@ -14,19 +14,19 @@
     },
     {
         "DisplayName": "Server Name",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Sets the name of the server shown in the server browser",
         "Keywords": "server,name,hostname",
         "FieldName": "hostname",
         "InputType": "text",
         "ParamFieldName": "hostname",
-        "DefaultValue": "AMP Powered CS:GO 2018 Server",
+        "DefaultValue": "AMP Powered CSGO 2018 Server",
         "EnumValues": {}
     },
     {
         "DisplayName": "Server Mod Name",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Name of the mod directory to load. Leave as 'csgo' unless you know what you are doing",
         "Keywords": "mod,game,directory",
@@ -39,7 +39,7 @@
     },
     {
         "DisplayName": "Server Password",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Password required to connect. Default is no password",
         "Keywords": "password,sv_password",
@@ -51,7 +51,7 @@
     },
     {
         "DisplayName": "LAN Server",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Run as a LAN server: no heartbeat to Valve and no client authentication. Recommended for a 2018 build unless you have a working GSLT",
         "Keywords": "lan,sv_lan",
@@ -66,9 +66,9 @@
     },
     {
         "DisplayName": "Game Server Login Token (GSLT)",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "Steam Game Server Login Token. Legacy CS:GO tokens are generated against app ID 4465480. A 2018 build is usually rejected as out of date, in which case leave this empty and have players use direct connect",
+        "Description": "Steam Game Server Login Token. Legacy CSGO tokens are generated against app ID 4465480. A 2018 build is usually rejected as out of date, in which case leave this empty and have players use direct connect",
         "Keywords": "gslt,token,steam",
         "FieldName": "sv_setsteamaccount",
         "InputType": "Password",
@@ -81,7 +81,7 @@
     },
     {
         "DisplayName": "Server Region",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Region shown in the server browser",
         "Keywords": "region",
@@ -104,7 +104,7 @@
     },
     {
         "DisplayName": "Server Steam Group",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "ID of the Steam group the server belongs to",
         "Keywords": "steam,group",
@@ -116,7 +116,7 @@
     },
     {
         "DisplayName": "Initial Game Mode",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "game_type and game_mode to start with",
         "Keywords": "gamemode,game_type",
@@ -142,7 +142,7 @@
     },
     {
         "DisplayName": "Game Mode Flag",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Modifier applied to the selected game mode",
         "Keywords": "flags",
@@ -159,7 +159,7 @@
     },
     {
         "DisplayName": "Initial Map",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Map the server starts on. Choose --Custom-- to use the Custom Initial Map field",
         "Keywords": "map",
@@ -191,7 +191,7 @@
     },
     {
         "DisplayName": "Custom Initial Map",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Map name used when Initial Map is set to --Custom--",
         "Keywords": "custom,map",
@@ -203,7 +203,7 @@
     },
     {
         "DisplayName": "Map Group",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Map group used for rotation",
         "Keywords": "mapgroup",
@@ -216,7 +216,7 @@
     },
     {
         "DisplayName": "Steam Web API Key",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Steam Web API key, only needed for workshop map hosting",
         "Keywords": "workshop,api,key",
@@ -228,7 +228,7 @@
     },
     {
         "DisplayName": "Server Tickrate",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Server tickrate",
         "Keywords": "tickrate",
@@ -244,7 +244,7 @@
     },
     {
         "DisplayName": "Maximum Players",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Maximum number of player slots",
         "Keywords": "players,slots",
@@ -258,7 +258,7 @@
     },
     {
         "DisplayName": "Visible Max Players",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Player count shown in the server browser. -1 uses the real value",
         "Keywords": "visible,players",
@@ -270,7 +270,7 @@
     },
     {
         "DisplayName": "Disable Valve Anti-Cheat",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Starts the server with -insecure. Needed when VAC cannot initialise against a legacy build",
         "Keywords": "vac,insecure",
@@ -285,7 +285,7 @@
     },
     {
         "DisplayName": "Pure Server Mode",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Client file consistency enforcement",
         "Keywords": "pure",
@@ -302,7 +302,7 @@
     },
     {
         "DisplayName": "Kick Impure Clients",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Kick clients that fail sv_pure",
         "Keywords": "pure,kick",
@@ -317,7 +317,7 @@
     },
     {
         "DisplayName": "Enforce File Consistency",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Enforce file consistency for critical files",
         "Keywords": "consistency",
@@ -332,7 +332,7 @@
     },
     {
         "DisplayName": "Force Preload",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Force server-side preloading",
         "Keywords": "preload",
@@ -347,7 +347,7 @@
     },
     {
         "DisplayName": "Enable Cheats",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Allow cheat commands",
         "Keywords": "cheats",
@@ -362,7 +362,7 @@
     },
     {
         "DisplayName": "Allow Downloads",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Allow clients to download custom content",
         "Keywords": "download",
@@ -377,7 +377,7 @@
     },
     {
         "DisplayName": "Allow Uploads",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Allow clients to upload custom content",
         "Keywords": "upload",
@@ -392,7 +392,7 @@
     },
     {
         "DisplayName": "Fast Download URL",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "HTTP location clients fetch custom content from",
         "Keywords": "fastdl,download,url",
@@ -404,7 +404,7 @@
     },
     {
         "DisplayName": "Minimum Rate",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Minimum client bandwidth rate",
         "Keywords": "rate",
@@ -417,7 +417,7 @@
     },
     {
         "DisplayName": "Maximum Rate",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Maximum client bandwidth rate (0 = unlimited)",
         "Keywords": "rate",
@@ -430,7 +430,7 @@
     },
     {
         "DisplayName": "Minimum Update Rate",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Minimum client update rate",
         "Keywords": "updaterate",
@@ -443,7 +443,7 @@
     },
     {
         "DisplayName": "Maximum Update Rate",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Maximum client update rate",
         "Keywords": "updaterate",
@@ -456,7 +456,7 @@
     },
     {
         "DisplayName": "Additional Command Line Parameters",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Extra command line parameters (anything starting with -) not set by AMP",
         "Keywords": "custom,parameters",
@@ -469,7 +469,7 @@
     },
     {
         "DisplayName": "Additional Console Variables",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Extra console variables (anything starting with +) not set by AMP",
         "Keywords": "custom,convars",
@@ -482,7 +482,7 @@
     },
     {
         "DisplayName": "Additional Server Settings",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Extra lines written into server.cfg, one setting per line",
         "Keywords": "custom,settings",
@@ -495,7 +495,7 @@
     },
     {
         "DisplayName": "Friendly Fire",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Enable friendly fire",
         "Keywords": "friendlyfire",
@@ -510,7 +510,7 @@
     },
     {
         "DisplayName": "Auto Team Balance",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Automatically balance teams",
         "Keywords": "balance",
@@ -525,7 +525,7 @@
     },
     {
         "DisplayName": "Time Limit",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Map time limit in minutes (0 = none)",
         "Keywords": "timelimit",
@@ -538,7 +538,7 @@
     },
     {
         "DisplayName": "Maximum Rounds",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Rounds played before the map changes",
         "Keywords": "rounds",
@@ -550,7 +550,7 @@
     },
     {
         "DisplayName": "Spectator Mode",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "What dead players may spectate",
         "Keywords": "spectate,camera",
@@ -565,7 +565,7 @@
     },
     {
         "DisplayName": "Disable Auto Kick",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Disable kicking for idling, team damage or team killing",
         "Keywords": "autokick",
@@ -580,7 +580,7 @@
     },
     {
         "DisplayName": "Allow Pausing",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Allow the game to be paused",
         "Keywords": "pause",
@@ -595,7 +595,7 @@
     },
     {
         "DisplayName": "Allow Wait Command",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Allow the wait console command",
         "Keywords": "wait",
@@ -610,7 +610,7 @@
     },
     {
         "DisplayName": "Enable Voice Chat",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Enable in-game voice chat",
         "Keywords": "voice",
@@ -625,7 +625,7 @@
     },
     {
         "DisplayName": "Alive Players Hear Enemies",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Living players can hear enemy voice chat",
         "Keywords": "voice,enemy",
@@ -640,7 +640,7 @@
     },
     {
         "DisplayName": "Dead Players Hear Enemies",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Dead players can hear enemy voice chat",
         "Keywords": "voice,enemy",
@@ -655,7 +655,7 @@
     },
     {
         "DisplayName": "Clear Hint History",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
         "Description": "Clear hint history between rounds",
         "Keywords": "hints",
@@ -670,7 +670,7 @@
     },
     {
         "DisplayName": "Disable SourceTV",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "SourceTV:tv:3",
         "Description": "Start the server with -nohltv",
         "Keywords": "sourcetv,hltv",
@@ -685,7 +685,7 @@
     },
     {
         "DisplayName": "Auto Record Demos",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "SourceTV:tv:3",
         "Description": "Automatically record SourceTV demos",
         "Keywords": "demo,record",
@@ -700,7 +700,7 @@
     },
     {
         "DisplayName": "SourceTV Max Clients",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "SourceTV:tv:3",
         "Description": "Maximum SourceTV spectators",
         "Keywords": "sourcetv,clients",
@@ -714,7 +714,7 @@
     },
     {
         "DisplayName": "SourceTV Max Rate",
-        "Category": "CS:GO 2018:stadia_controller",
+        "Category": "CSGO 2018:stadia_controller",
         "Subcategory": "SourceTV:tv:3",
         "Description": "Maximum SourceTV bandwidth (0 = unlimited)",
         "Keywords": "sourcetv,rate",
@@ -811,7 +811,7 @@
         "DisplayName": "steam.inf App ID Override",
         "Category": "Updates",
         "Subcategory": "Build:build:1",
-        "Description": "Rewrites appID in csgo/steam.inf. Leave unchanged to keep the build's own value (730). 4465480 is the legacy CS:GO app ID used by current legacy servers",
+        "Description": "Rewrites appID in csgo/steam.inf. Leave unchanged to keep the build's own value (730). 4465480 is the legacy CSGO app ID used by current legacy servers",
         "Keywords": "steam.inf,appid",
         "FieldName": "SteamInfAppID",
         "InputType": "enum",
@@ -820,7 +820,7 @@
         "EnumValues": {
             "": "Leave unchanged (default)",
             "730": "730 (CS:GO)",
-            "4465480": "4465480 (CS:GO Legacy)"
+            "4465480": "4465480 (CSGO Legacy)"
         }
     }
 ]
